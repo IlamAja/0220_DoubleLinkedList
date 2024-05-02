@@ -31,4 +31,5 @@ if (START != NULL && newNode->noMhs == START->noMhs) {
         START->prev = newNode;
     }
     newNode->prev = NULL;
+    START = newNode;
 }
