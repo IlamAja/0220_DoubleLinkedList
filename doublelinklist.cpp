@@ -27,9 +27,14 @@ if (START != NULL && newNode->noMhs == START->noMhs) {
         return;
     }
     //jika list kosong
+    newNode-> next = START;
     if (START != NULL) {
         START->prev = newNode;
     }
     newNode->prev = NULL;
     START = newNode;
+}
+else {
+    
+
 }
