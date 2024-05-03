@@ -12,29 +12,32 @@ struct Node
 
 Node* START = NULL;
 
-void addNode() {
+void addNode()
+{
     Node * newNode = new Node();
     cout << "\nEnter the roll number of the student: ";
     cin >> newNode -> noMhs;
     cout << "\nEnter the name of the student: ";
     cin >> newNode -> name;
-}
 
-if (START != NULL && newNode->noMhs == START->noMhs) {
+    if (START != NULL && newNode->noMhs == START->noMhs) {
     
-    if (START != NULL && newNode->noMhs == START->noMhs){
-        cout << "\033[31mDuplicate roll numbers not allowed\033[0m" << endl;
-        return;
+        if (START != NULL && newNode->noMhs == START->noMhs){
+            cout << "\033[31mDuplicate roll numbers not allowed\033[0m" << endl;
+            return;
     }
     //jika list kosong
-    newNode-> next = START;
-    if (START != NULL) {
+        newNode->next = START;
+        if (START != NULL) 
+    {
         START->prev = newNode;
     }
     newNode->prev = NULL;
     START = newNode;
-}
-else {
+    }
+    else 
+    {
+    //memasukkan new node di tengah atau di terakhir
     
-
+    }
 }
